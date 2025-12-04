@@ -1,8 +1,8 @@
 
 file_path = './puzzle-input.txt'
 
+# Part 1: finding largest joltage of numbers per battery
 try:
-    # Part 1: finding largest joltage of numbers per battery
     with open(file_path, 'r') as file:
         total_joltage = 0
         for line in file:
@@ -21,8 +21,8 @@ except Exception as e:
     print(f"An error occurred: {e}")
 
 
+# Part 2: finding largest joltage of numbers per battery
 try:
-    # Part 2: finding largest joltage of numbers per battery
     with open(file_path, 'r') as file:
         total_joltage = 0
         for line in file:
@@ -44,7 +44,6 @@ try:
             total_joltage += joltage
 
         print(f"Total joltage = {total_joltage}")
-
 except FileNotFoundError:
     print(f"Error: the file path was not found.")
 except Exception as e:
